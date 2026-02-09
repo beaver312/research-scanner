@@ -12,8 +12,8 @@ long_description = (this_directory / "README.md").read_text(encoding='utf-8')
 setup(
     name="research-scanner",
     version="1.0.0",
-    author="Research Scanner Contributors",
-    author_email="your.email@example.com",
+    author="Vincent Micó",
+    author_email="vincent.mico@proton.me",
     description="Universal research paper discovery system - works for ANY research domain",
     long_description=long_description,
     long_description_content_type="text/markdown",
